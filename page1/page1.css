@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url(page1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bgcolor {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: monospace;
+    font-weight: 700;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    padding-left: 10px;
+    font-size: 39px;
+    color: rgb(243, 240, 243);
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dis {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.dis span {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px black;
+}
+
+.dis .desc {
+    color: white;
+    position: relative;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 1.12em;
+
+}
+
+.btn button {
+    margin-top: 5%;
+    padding: 15px;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.01s transform,
+        0.2s ease background-color;
+
+}
+
+.btn button:active {
+    transform: translateY(3px);
+}
+
+.btn button:hover {
+    background-color: whitesmoke;
+}
+
+.nav ul li a:hover {
+    color: rgb(8, 250, 230);
+}
