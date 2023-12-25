@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Oregano&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(gr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.frame{
+    /* position: absolute; */
+    display: flex;
+    height: 85%;
+    width: 90%;
+    background-color: transparent;
+    flex-direction: row-reverse;
+    box-shadow: 0px 0px 10px black;
+}
+
+.frame .desc{
+    height: 100%;
+    width: 60%;
+    background: url(people.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.frame .login{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.loginframe{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login .inputs input{
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 30px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    background-color: transparent;
+    outline:none;
+}
+
+.loginframe .lg{
+    font-size: 70px;
+    font-family: kanit;
+    color: rgb(2,94,94);
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+.loginframe .btn{
+    width: 80%;
+    position: relative;
+    padding: 15px;
+    margin-top: 5%;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 40px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.inputs .forgot{
+    text-align: end;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.inputs a:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+.inputs a{
+    text-decoration: none;
+}
+
+.inputs .reg{
+    margin-top: 5%;
+    font-size: 20px;
+    justify-content: flex-end;
+    font-family: monospace;
+    position: relative;
+    
+}
+
+
+.btn:active{
+    transform: translateY(4px);
+}
+
+.inputs input::placeholder{
+    font-size: 20px;
+    column-rule: black;
+}
