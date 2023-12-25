@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url(login4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    background-color: rgba(255, 255, 255, 0.226);
+    height: 400px;
+    width: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.336);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+
+}
+
+.frame .lg {
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    position: relative;
+    color: rgb(31, 40, 70);
+    top: -13%;
+}
+
+
+.frame .input input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -5%;
+    margin-bottom: 15%;
+}
+
+.frame .input input::placeholder {
+    color: rgba(0, 0, 0, 0.781);
+    font-family: monospace;
+}
+
+.frame .forgot {
+    font-size: 20px;
+    position: relative;
+    display: block;
+    top: -10%;
+    right: -30%;
+    text-align: end;
+
+}
+
+.frame .btn {
+    outline: none;
+    border: 1px solid black;
+    font-size: 25px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: monospace;
+    background-color: transparent;
+}
+
+.frame .btn:active {
+    transform: translateY(2px);
+}
+.frame .btn:hover{
+    background-color: whitesmoke;
+}
+
+.frame .reg {
+    position: relative;
+    display: flex;
+    bottom: -10%;
+    font-size: 22px;
+
+}
+
+.frame .forgot a {
+    text-decoration: none;
+    color: blue;
+}
+
+.frame .reg a {
+    text-decoration: none;
+    color: blue;
+}
