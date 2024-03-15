@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.frame{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(95,93,93,0.37);
+}
+.name{
+    position: relative;
+    bottom: 30px;
+}
+input{
+    padding: 10px;
+    margin: 3px;
+    font-size: 12px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(95, 93, 93, 0.37);
+    border-radius: 2px;
+}
+
+.btn{
+    padding: 8px;
+    width: 76%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: rgb(88,216,216);
+}
+.seperator{
+    color: grey;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    width: 40px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+.seperator::before,
+.seperator::after{
+    content: "";
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    height: 1px;
+    top: 8px;
+    z-index: -1;
+}
+
+.seperator::before{
+    left: 0;
+}
+.seperator::after{
+    right: 0;
+}
+.link{
+    margin-top: 20px;
+}
+.forgot{
+    position: relative;
+    top: 20px;
+}
+
+.forgot a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(47,47,104);
+}
+.frame-2{
+    height: 60px;
+    margin-top: 10px;
+    width: 350px;
+    display: flex;
+    border: 1px solid rgba(95, 93, 93, 0.37);
+    justify-content: center;
+    align-items: center;
+}
+.reg a{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(86,219,219);
+}
