@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+.frame{
+    height: 395px;
+    widows: 1045px;
+}
+
+.row{
+    display: flex;
+}
+
+.keys1{
+    height: 32px;
+    width: 59.3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 2px 3px 5px 0px black;
+    background-color: rgb(250,245,240);
+    font-size: 12px;
+    margin: 3px;
+}
+
+.keys{
+    height: 65px;
+    width: 65px;
+    box-shadow: 2px 3px 5px 0px black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(250, 245, 240);
+    flex-direction: column;
+    margin: 3px;
+
+}
+
+.backspace{
+    width: 115px;
+}
+
+.tab{
+    width: 116px;
+}
+.caps{
+    width: 132px;
+}
+
+.return{
+    width: 120px;
+}
+
+.lshift{
+    width: 160px;
+}
+
+.rshift{
+    width: 163px;
+}
+
+.space{
+    width: 400px;
+}
+
+.direction{
+    height: 65px;
+    width: 65px;
+    margin: 3px;
+}
+
+.up,
+.down{
+    width: 65px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 0px black;
+    background-color: rgb(250, 245, 240);
+
+}
+
+.down{
+    margin-top: 5px;
+
+}
