@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    flex-direction: row;
+}
+
+.frame-1{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-size: 80px;
+    color: #0866ff;
+    font-weight: bold;
+}
+.desc{
+    font-size: 30px;
+    color: #1c1e21;
+}
+.frame-2{
+    background-color: white;
+    height: 330px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 2px 10px 2px grey;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+}
+
+input{
+    padding: 15px;
+    border: 1px solid #babbbd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 80%;
+    position: relative;
+    bottom: 40px;
+}
+
+.btn{
+    height: 40px;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #0866ff;
+    border: 1px solid #0866ff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 40px;
+}
+
+.forg a{
+    text-decoration: none;
+    color: #0866ff;
+    bottom: 25px;
+    position: relative;
+}
+
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: #babbbd;
+    position: relative;
+    bottom: 15px;
+}
+
+.new{
+    height: 50px;
+    width: 55%;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    background-color: #42b72a;
+}
