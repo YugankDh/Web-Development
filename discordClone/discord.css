@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+.sec {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #404eed;
+    align-items: center;
+}
+
+.navbar {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-left: 100px;
+}
+
+.navbar ul {
+    position: absolute;
+    margin-left: 30%;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 10px;
+    z-index: 2;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .login {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-right: 100px;
+    padding: 13px;
+    width: 80px;
+    font-size: 13px;
+    transition: 0.2s;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+.frame1 {
+    position: relative;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    margin-left: 22%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.frame1 h1 {
+    font-size: 70px;
+    position: relative;
+    bottom: 10px;
+    color: #ffff;
+    text-shadow: 0px 2px 2px 0px, 2px 2px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+.frame1 p {
+    color: white;
+    font-weight: light;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.bgimg1 img {
+    position: absolute;
+    left: -320px;
+    bottom: 0;
+}
+
+.bgimg2 img {
+    position: absolute;
+    right: -220px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.frame1 .buttons {
+    position: relative;
+    top: 40px;
+    z-index: 2;
+}
+
+.frame1 .buttons .download {
+    font-size: 20px;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    transition: 0.2s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.frame1 .buttons .download2 {
+    font-size: 20px;
+    outline: none;
+    padding: 15px;
+    color: white;
+    background-color: #23272a;
+    border: none;
+    width: 450px;
+    transition: 0.2s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.navbar .login:hover,
+.frame1 .buttons .download:hover{
+    color: #404eed;
+}
+
+.navbar .login:hover,
+.frame1 .buttons .download:hover,
+.frame1 .buttons .download2:hover{
+    box-shadow: 0px 5px 10px #00000081;
+}
