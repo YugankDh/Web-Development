@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,lime,aqua);
+}
+
+.container{
+    height: 100px;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000088;
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    box-shadow: -5px -5px 10px black;
+}
