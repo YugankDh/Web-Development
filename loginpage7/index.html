@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body style="background-image: url(landscape.png);"
+    class="bg-cover bg-no-repeat bg-center p-20 h-screen w-screen flex justify-center items-center">
+    <div class="absolute flex h-full w-full bg-blackchade justify-center items-center">
+        <div class="absolute top-0 h-12 w-full text-black flex items-center">
+            <div class="absolute left-12 font-bold text-3xl font-mono">Login</div>
+            <ul class="flex space-x-7 absolute right-12 font-sans text-lg font-bold">
+                <li><a class="hover:text-white transition" href="#">Home</a></li>
+                <li><a class="hover:text-white transition" href="#">About</a></li>
+                <li><a class="hover:text-white transition" href="#">Contact Us</a></li>
+                <li><a class="hover:text-white transition" href="#">Downlaods</a></li>
+            </ul>
+        </div>
+
+        <div class="relative h-400 w-96 border-2 border-white rounded-md backdrop-blur-md flex flex-col items-center">
+            <div class="font-bold uppercase top-2 text-4xl font-sans mt-3">Welcome</div>
+            <div class="mt-14 flex w-full h-auto flex-col items-center justify-evenly">
+                <div class="flex h-auto w90 items-center justify-center">
+                    <input type="text" placeholder="Username"
+                        class="relative w-80 h-10 rounded-full pl-4 border border-black bg-transparent backdrop-blur-sm placeholder-slate-900 outline-none font-bold">
+                    <img src="user.png" width="23pc" class="absolute right-10">
+                </div>
+                <div class="text-end w-80 mt-2 mb-2">
+                    <a href="#" class="text-black font-bold hover:text-white transition">Forgot password?</a>
+                </div>
+                <div class="flex h-auto w90
+                 items-center justify-center flex-col">
+                    <input type="text"
+                        class="relative w-80 h-10 rounded-full pl-4 border border-black bg-transparent backdrop-blur-sm placeholder-slate-900 outline-none font-bold"
+                        placeholder="Password">
+                    <img src="padlock.png" width="23px" class="absolute right-10">
+                </div>
+            </div>
+            <button
+                class="absolute w-72 h-12 rounded-full border-2 border-white bg-white text-black font-bold text-2xl bottom-16 active:translate-y-1 outline-none">Login</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

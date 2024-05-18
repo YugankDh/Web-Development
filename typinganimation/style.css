@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.container{
+    font-size: 40px;
+    color: white;
+    font-family: system-ui;
+}
+
+.container span{
+    color: orangered;
+}
