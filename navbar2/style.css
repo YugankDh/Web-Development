@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 3rem;
+}
+
+.links{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links ul li {
+    list-style:none;
+    
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.links ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0%;
+    background: white;
+    transition: 0.5s;
+}
+
+.links ul li a:hover::before{
+    width: 100%;
+}
