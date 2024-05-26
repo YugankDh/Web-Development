@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="card.jpg" width="100%">
+        <div class="title">The lake</div>
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi at reprehenderit dolor, nisi, ad quo, repudiandae recusandae minus odio facilis fuga suscipit nostrum blanditiis.</div>
+        <button class="btn">Explore</button>
+    </div>
+    
+    <script src="hover3D.js"></script>
+    <script>
+        let hover = new Hover3D(".card")
+        hover.attack = 0.1
+        hover.release = 0.5
+        hover.perspective = 1000
+    </script>
+</body>
+</html>
