@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(realistic-beautiful-landscape-sunset.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frame {
+    height: 370px;
+    width: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    color: orangered;
+    margin-top: 1rem;
+}
+
+
+.email {
+    width: 85%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.email input,
+.password input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 18px;
+}
+
+.email input::placeholder,
+.password input::placeholder {
+    color: #383838;
+}
+
+
+.email input {
+    margin-bottom: 2rem;
+}
+
+.password {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.email img,
+.password img {
+    position: absolute;
+    right: 2rem;
+}
+
+.forgot {
+    width: 85%;
+    display: flex;
+    justify-content: end;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    width: 85%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background: orangered;
+    color: white;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.signup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
