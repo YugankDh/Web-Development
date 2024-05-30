@@ -16,6 +16,14 @@ body {
     background-position: center;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000015;
+}
+
 .frame {
     height: 400px;
     width: 350px;
@@ -51,12 +59,12 @@ body {
     border: none;
     outline: none;
     font-size: 17px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 .user input::placeholder,
 .pass input::placeholder {
-    color: black;
+    color: white;
     font-size: 15px;
 
 }
