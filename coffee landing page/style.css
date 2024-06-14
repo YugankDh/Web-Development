@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(135deg, #3c1b0b 60%, #fdfdfd 50%);
+}
+
+.nav {
+    position: absolute;
+    background: #381606;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+
+}
+
+.nav .logo {
+    position: absolute;
+    left: 2rem;
+    color: white;
+    font-size: 35px;
+    font-family: "permanent marker";
+
+}
+
+.nav .order {
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background: #c4903a;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav .links {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    position: absolute;
+    right: 25rem;
+}
+
+.links li {
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+    font-family: dosis;
+    font-weight: bold;
+    position: relative;
+}
+
+.links li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.links li a:hover::before {
+    transform: scaleX(1);
+}
+
+
+.text-frame {
+    width: 40%;
+    display: flex;
+    padding-left: 3rem;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text-frame .headline {
+    font-size: 50px;
+    font-family: dosis;
+    font-weight: bold;
+    color: white;
+}
+
+.text-frame .description {
+    font-size: 20px;
+    font-family: dosis;
+    color: white;
+
+}
+
+.text-frame .buttons {
+    height: 40px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons .order,
+.buttons .explore {
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background: #c4903a;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-frame {
+    width: 60%;
+    display: flex;
+    position: relative;
+}
+
+.image-frame img:last-child {
+    width: 550px;
+    position: absolute;
+    left: 7rem;
+    top: 6rem;
+}
+
+.image-frame img:first-child {
+    width: 700px;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+    z-index: 2;
+}
+
+.buttons .order:hover,
+.buttons .explore:hover,
+.nav .order:hover {
+    transform: scale(1.1);
+}
