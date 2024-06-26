@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="main_frame">
+            <div class="buttons">
+                <button onclick="signIn()" class="in">Sign In</button>
+                <button onclick="signUp()" class="up">sign Up</button>
+            </div>
+            <div class="title">Sign In</div>
+            <div class="input_area">
+                <div class="sign_in">
+                    <div class="email">
+                        <input type="text" placeholder="Email address" />
+                        <img src="user.png" width="23px" />
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="password" />
+                        <img src="lock.png" width="23px" />
+                    </div>
+                    <div class="remember_forgot">
+                        <div class="remember">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Remember Me</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button class="log">Sign In</button>
+                </div>
+                <div class="sign_up">
+                    <div class="email">
+                        <input type="text" placeholder="Email address" />
+                        <img src="user.png" width="23px" />
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="password" />
+                        <img src="lock.png" width="23px" />
+                    </div>
+                    <button class="register">Register</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let title = document.querySelector(".title")
+            let frame = document.querySelector(".input_area")
+            let signInButton = document.querySelector(".in")
+            let signUpButton = document.querySelector(".up")
+
+            function signIn() {
+                frame.style.right = "0"
+                signInButton.style.background = "#12af4e"
+                signUpButton.style.background = "transparent"
+                title.innerHTML = "Sign In"
+            }
+
+            function signUp() {
+                frame.style.right = "100%"
+                signUpButton.style.background = "#12af4e"
+                signInButton.style.background = "transparent"
+                title.innerHTML = "Sign Up"
+            }
+        </script>
+    </body>
+</html>
