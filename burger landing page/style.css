@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(burger.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: absolute;
+    top: 1rem;
+    background: #ffffff;
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #febf0a;
+    font-family: "permanent marker";
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar ul li a::before {
+    content: "";
+    height: 3px;
+    bottom: -2px;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar .log {
+    padding: 8px;
+    margin-right: 0.3rem;
+    border-radius: 50px;
+    width: 100px;
+    font-size: 22px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: #febf0a;
+    cursor: pointer;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section {
+    padding-left: 20px;
+    height: 100%;
+    width: 40%;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section .title {
+    font-size: 70px;
+    font-family: "Luckiest Guy";
+    color: #febf0a;
+}
+
+.hero-section .description {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.hero-section .order {
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #febf0a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin-top: 0.5rem;
+    transition: 0.5s;
+}
+
+.hero-section .order:hover {
+    border-radius: 50px;
+}
+
+.hero-section .order img {
+    margin-right: 0.2rem;
+}
