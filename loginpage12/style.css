@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: sans-serif;
+}
+
+.rainbow-frame {
+    height: 400px;
+    position: relative;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202020;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rainbow {
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: conic-gradient(
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        red
+    );
+    border-radius: 15px;
+    animation: rotate 2s linear infinite;
+}
+
+.box {
+    border-radius: 15px;
+    background: #202020;
+    position: absolute;
+    width: 340px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .log {
+    color: white;
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+}
+
+.box .email,
+.box .password {
+    width: 90%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    margin-bottom: 3rem;
+}
+
+.mail,
+.pass {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.mail::placeholder,
+.pass::placeholder {
+    color: #bbbbbb;
+    font-size: 15px;
+}
+
+.remember_forgot {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.forgot a {
+    color: white;
+}
+
+.btn {
+    position: absolute;
+    bottom: 3rem;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
