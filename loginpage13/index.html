@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="pattern-overlay"></div>
+                <div class="blur-circle right"></div>
+                <div class="blur-circle left"></div>
+                <div class="header-content">
+                    <div class="icon-wrapper bounce-slow">
+                        <i data-lucide="rocket" class="rocket-icon"></i>
+                    </div>
+                    <h2 class="fade-in">Welcome Explorer!</h2>
+                    <p class="fade-in-delay">Your adventure begins here</p>
+                </div>
+            </div>
+            <div class="login-form">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i data-lucide="mail" class="input-icon"></i>
+                        <input type="email" placeholder="Email address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i data-lucide="lock" class="input-icon"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button class="toggle-password" onclick="togglePassword()">
+                            <i data-lucide="eye" class="eye-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button class="login-button" type="submit">
+                    <i data-lucide="log-in"></i>
+                    <span>Let's Go!</span>
+                </button>
+
+                <p class="signup-prompt">
+                    First time here? <a href="#">Join the fun!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        lucide.createIcons()
+
+        function togglePassword() {
+            const password = document.getElementById('password')
+            const eyeIcon = document.querySelector(".eye-icon")
+
+            if (password.type === 'password') {
+                password.type = 'text'
+                eyeIcon.setAttribute('data-lucide', 'eye-off')
+            } else {
+                password.type = 'password'
+                eyeIcon.setAttribute('data-lucide', 'eye')
+
+            }
+            lucide.createIcons()
+        }
+    </script>
+
+</body>
+
+</html>
